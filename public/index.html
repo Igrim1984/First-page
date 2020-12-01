@@ -1,0 +1,348 @@
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="content.style.css">
+</head>
+
+<body class="text-indigo-700 font-serif bg-prim">
+
+    <div>
+        <!----CONTENT WRAPPER ----->
+        <!-------------------------------------------------------HEADER------------------------------------------------------------->
+        <header class="items-center">
+            <div class="mb-4 flex-row flex justify-center w-full bg-gradient-to-r from-indigo-800 via-red-800 to-orange-800  border-indigo-900 border-b-2 shadow-lg text-gray-400">
+                <h1>
+                    <a href="#" class="text-white text-4xl sm:text-6xl font-bold p-6 sm:text-center inline-block imgh">Łódzkie
+                        Smakuje</a>
+                </h1>
+                
+                <div id="burger" class="p-4 content-center lg:hidden flex justify-end">
+                    <svg class="w-24 h-24 cursor-pointer border-white border-2 text-white transform hover:scale-125"
+                        fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <!------------------------------------------------------LOGIN & REGISTER---------------------------------------------------------->
+            <div class="p-6 font-bold text-xl flex text-center justify-center lg:justify-end mb-2">
+                <span id="login" class="btn p-2 mr-5">
+                    Logowanie
+                </span>
+                <span id="reg" class="btn p-2 ml-5">
+                    Rejestracja
+                </span>
+            </div>
+            <div  class="flex flex-auto justify-center lg:justify-end">
+                <div id="loginform" class="hidden text-lg font-bold">
+                    <form action="" method="post"
+                        class="placeholder-gray-600 items-center flex flex-col md:flex-row border-2 border-indigo-900 rounded-md p-6 m-4 from-gray-400 to-gray-100 bg-gradient-to-l">
+                        <label for="email">Wpisz e-mail:
+                            <input type="text" aria-label="wpisz swój adres e-mail" placeholder="e-mail" name="email"
+                                class="border-indigo-900 border-2 m-2 text-black">
+                        </label>
+                        <label for="haslo">Wpisz hasło:
+                            <input type="text" aria-label="wpisz swoje hasło" placeholder="hasło" name="haslo"
+                                class="border-indigo-900 border-2 m-2 text-black">
+                        </label>
+                        <input type="submit" value="Zaloguj" class="btn">
+                    </form>
+                </div>
+                <div id="regform" class="hidden text-lg">
+                    <form action="" method="post"
+                        class="placeholder-gray-600 font-bold flex flex-col border-2 border-indigo-900 rounded-md p-6 from-gray-400 to-gray-100 bg-gradient-to-l">
+                        <label for="name" class="flex flex-col">Imię i nazwisko lub nazwa:
+                            <input type="text" aria-label="wpisz swoje imię i nazwisko lub adres"
+                                placeholder="Imię Nazwisko / Nazwa" name="name"
+                                class="border-indigo-900 border-2 mb-4 text-black">
+                        </label>
+                        <label for="e-mail" class="flex flex-col">Adres e-mail:
+                            <input type="text" aria-label="wpisz swój adres e-mail" placeholder="Adres e-mail"
+                                name="haslo" class="border-indigo-900 border-2 mb-4 text-black">
+                        </label>
+                        <label for="street" class="flex flex-col">Ulica:
+                            <input type="text" aria-label="swój adres zamieszkania"
+                                placeholder="Ulica nr domu / nr lokalu" name="street"
+                                class="border-indigo-900 border-2 mb-4 text-black">
+                        </label>
+                        <label for="city" class="flex flex-col">Miasto:
+                            <input type="text" aria-label="wpisz nazwę miasta" placeholder="Nazwa miasta" name="city"
+                                class="border-indigo-900 border-2 mb-4 text-black">
+                        </label>
+                        <label for="post_code" class="flex flex-col">Kod pocztowy:
+                            <input type="text" aria-label="wpisz kod-pocztowy" placeholder="XX-XXX" name="Post code"
+                                class="border-indigo-900 border-2 mb-4 text-black">
+                        </label>
+                        <input type="submit" value="Zarejestruj" class="btn self-center m-4">
+                    </form>
+                </div>
+            </div>
+        </header>
+        <div class="grid grid-cols-12">
+            <!--------------------------------------------------NAVIGATION------------------------------------------------------------>
+            <!---------------------------------------------------LEFT NAV------------------------------------------------------------->
+            <aside class="col-span-12 lg:col-span-2">
+                <nav>
+                    <div class=" text-xl text-center">
+                        <div id="dropmenu" class="p-4 hidden lg:block">
+                            <h1 class="text-indigo-900 text-2xl font-bold mb-4">Nawigacja</h1>
+                            <h2 class="text-indigo-700 text-lg font-bold mb-4 hover:text-indigo-500 cursor-pointer">
+                                <a href="#">Strona główna</a></h2>
+                            <h2
+                                class="text-indigo-700 text-lg font-bold mb-4 hover:text-indigo-500 cursor-pointer imgh">
+                                <a href="article.html">Artykuły</a> </h2>
+                            <h2
+                                class="text-indigo-700 text-lg font-bold mb-4 hover:text-indigo-500 cursor-pointer imgh">
+                                <a href="article.html">Media</a></h2>
+                            <h2
+                                class="text-indigo-700 text-lg font-bold mb-4 hover:text-indigo-500 cursor-pointer imgh">
+                                Pomoc</h2>
+                            <h2
+                                class="text-indigo-700 text-lg font-bold mb-4 hover:text-indigo-500 cursor-pointer imgh">
+                                Kontakt</h2>
+                            <div>
+                            </div>
+                </nav>
+                <div class="p-3">
+                    <div class="min-w-full hidden lg:block border-white rounded" style="height:600px;">
+                        <img src="../public/img/tramwaj.jpg"
+                            class=" min-h-auto min-w-full relative border-primary border-4 hover:opacity-75"
+                            alt="Tramwaj na wąskiej ulicy">
+                        <div class="text-2xl text-black font-bold text-center inline-block align-text-bottom mb-4">Tutaj
+                            możemy dać np. Facebook'a</div>
+                        <div>
+                            <h1 class="text-xl text-indigo-900 font-bold">Polecane artykuły:</h1>
+                            <a href="article.html"><img src="../public/img/kogut.jpg"
+                                    class="min-h-auto min-w-full relative mb-4 border-primary border-4 hover:opacity-75"
+                                    alt="Czerwony kogut"></a>
+                            <a href="article.html"><img src="../public/img/Krowy.jpg"
+                                    class="min-h-auto min-w-full relative mb-4 border-primary border-4 hover:opacity-75"
+                                    alt="Krowy"></a>
+                            <img src="../public/img/Mleko.jpg"
+                                class="min-h-auto min-w-full relative mb-4 border-primary border-4 hover:opacity-75"
+                                alt="Dzbanek mleka">
+                            <img src="../public/img/Zbiór jabłek.jpg"
+                                class="min-h-auto min-w-full relative mb-4 border-primary border-4 hover:opacity-75"
+                                alt="Kosze pełne jabłek">
+                            <img src="../public/img/Króliki.jpg"
+                                class="min-h-auto min-w-full relative mb-4 border-primary border-4 hover:opacity-75"
+                                alt="Trzy króliku na progu wejścia do zagrody">
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <div class="col-span-12 lg:col-span-10 text-center">
+                <!------------------------------------------------NAV INLINE---------------------------------------------------------->
+                <nav>
+                    <ul class="text-indigo-900 text-3xl font-bold p-2 lg:flex lg:justify-around">
+                        <li class="p-3 imgh">
+                            <a href="#">
+                                <span>
+                                    Podstrona 1
+                                </span>
+                            </a>
+                        </li>
+                        <li class="p-3 imgh">
+                            <a href="#">
+                                <span>
+                                    Podstrona 2
+                                </span>
+                            </a>
+                        </li>
+                        <li class="p-3 imgh">
+                            <a href="#">
+                                <span class>
+                                    Podstrona 3
+                                </span>
+                            </a>
+                        </li>
+                        <li class="p-3 imgh">
+                            <a href="#">
+                                <span>
+                                    Podstrona 4
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!----------------------------------------------------WALLPAPER---------------------------------------------------------------->
+                <div class="mt-4 ml-5 mr-5 bg-fixed min-w-auto bg-no-repeat bg-cover border-4 border-indigo-900 rounded"
+                    style="background-image: url(../public/img/jabłka.jpg); height:800px;"></div>
+
+                <!--------------------------------------------------PRIMARY MAIN--------------------------------------------------------------->
+                <main class="mt-6">
+                    <div class="p-6">
+                        <h1
+                            class="text-indigo-900 text-xl text-center p-2 font-bold mb-8 border-b-4 border-t-4 border-indigo-900 bg-white">
+                            Sekcja główna</h1>
+                        <div class="grid lg:grid-cols-3 gap-4">
+                            <!---Images here-->
+                            <div
+                                class="bg-white rounded-lg overflow-hidden shadow-2xl p-4 border-primary border-2 imgh">
+                                <img class="hover:opacity-75 w-full object-cover" src="img/kawiarnia.jpg"
+                                    alt="Lorem Ipsum is simply">
+                                <div class="m-4">
+                                    <span class="font-bold">Nazwa Obrazka</span>
+                                    <span class="block">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                                        1500s, when an unknown printer took a galley of type and scrambled it to make a
+                                        type specimen book.</span>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-white rounded-lg overflow-hidden shadow-2xl p-4 border-primary border-2 imgh">
+                                <img class="hover:opacity-75 w-full object-cover" src="img/kolacja.jpg"
+                                    alt="Lorem Ipsum is simply">
+                                <div class="m-4">
+                                    <span class="font-bold">Nazwa Obrazka</span>
+                                    <span class="block">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                                        1500s, when an unknown printer took a galley of type and scrambled it to make a
+                                        type specimen book.</span>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-white rounded-lg overflow-hidden shadow-2xl p-4 border-primary border-2 imgh">
+                                <img class="hover:opacity-75 w-full object-cover" src="img/spagetti.jpg"
+                                    alt="Lorem Ipsum is simply">
+                                <div class="m-4">
+                                    <span class="font-bold">Nazwa Obrazka</span>
+                                    <span class="block">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                                        1500s, when an unknown printer took a galley of type and scrambled it to make a
+                                        type specimen book.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------------------------------SECOUNDARY MAIN----------------------------------------------------------->
+                        <div class="">
+                            <h1
+                                class="text-indigo-900 text-lg font-bold flex justify-center p-2 m-8 border-t-4 border-b-4 border-indigo-900 bg-white">
+                                Najbardziej popularne</h1>
+                        </div>
+                        <div class="grid lg:grid-cols-3 gap-4">
+                            <!---Images here-->
+                            <div class="bg-white rounded-lg overflow-hidden shadow-md p-4 border-2 border-red-700 imgh">
+                                <img class="hover:opacity-75 w-full object-cover" src="img/kawiarnia.jpg"
+                                    alt="Lorem Ipsum is simply">
+                                <div class="m-4">
+                                    <span class="font-bold">Nazwa Obrazka</span>
+                                    <span class="block">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                                        1500s, when an unknown printer took a galley of type and scrambled it to make a
+                                        type specimen book.</span>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-lg overflow-hidden shadow-md p-4 border-2 border-red-700 imgh">
+                                <img class="hover:opacity-75 w-full object-cover" src="img/kolacja.jpg"
+                                    alt="Lorem Ipsum is simply">
+                                <div class="m-4">
+                                    <span class="font-bold">Nazwa Obrazka</span>
+                                    <span class="block">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                                        1500s, when an unknown printer took a galley of type and scrambled it to make a
+                                        type specimen book.</span>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-lg overflow-hidden shadow-md p-4 border-2 border-red-700 imgh">
+                                <img class="hover:opacity-75 w-full object-cover" src="img/spagetti.jpg"
+                                    alt="Lorem Ipsum is simply">
+                                <div class="m-4">
+                                    <span class="font-bold">Nazwa Obrazka</span>
+                                    <span class="block">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                                        1500s, when an unknown printer took a galley of type and scrambled it to make a
+                                        type specimen book.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!---------------------------------------WALLPAPER 2------------------------------------------------------>
+
+                        <div class="mt-6 bg-fixed min-w-auto bg-no-repeat bg-cover border-4 border-indigo-900 rounded"
+                            style="background-image: url(../public/img/zupa.jpg); height:800px;"></div>
+
+                        <!------------------------------------ANOTHER SECTION----------------------------------------------------->
+                        <div class="flex justify-center">
+                            <span id="anotherMenuIcon" class="btn p-2 mt-10 mb-10">Pokaż dodatkową zawartość</span>
+                        </div>
+
+                        <div id="anotherMenu" class="hidden">
+                            <h1
+                                class="text-indigo-900 text-lg font-bold flex justify-center p-2 m-8 border-t-4 border-b-4 border-indigo-900 bg-white">
+                                Dodatkowe artykuły</h1>
+                            <div class="grid lg:grid-cols-4 gap-4">
+                                <!---Images here-->
+                                <div
+                                    class="bg-white rounded-lg overflow-hidden shadow-md p-4 border-indigo-500 border-2 imgh">
+                                    <img class="hover:opacity-75 w-full object-cover" src="img/spagetti.jpg"
+                                        alt="Lorem Ipsum is simply">
+                                    <div class="m-4">
+                                        <span class="font-bold">Nazwa Obrazka</span>
+                                        <span class="block">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley of type and
+                                            scrambled it to make a type specimen book.</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="bg-white rounded-lg overflow-hidden shadow-md p-4 border-indigo-500 border-2 imgh">
+                                    <img class="hover:opacity-75 w-full object-cover" src="img/stół.jpg"
+                                        alt="Lorem Ipsum is simply">
+                                    <div class="m-4">
+                                        <span class="font-bold">Nazwa Obrazka</span>
+                                        <span class="block">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley of type and
+                                            scrambled it to make a type specimen book.</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="bg-white rounded-lg overflow-hidden shadow-md p-4 border-indigo-500 border-2 imgh">
+                                    <img class="hover:opacity-75 w-full object-cover" src="img/kolacja.jpg"
+                                        alt="Lorem Ipsum is simply">
+                                    <div class="m-4">
+                                        <span class="font-bold">Nazwa Obrazka</span>
+                                        <span class="block">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley of type and
+                                            scrambled it to make a type specimen book.</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="bg-white rounded-lg overflow-hidden shadow-md p-4 border-indigo-500 border-2 imgh">
+                                    <img class="hover:opacity-75 w-full object-cover" src="img/danie.jpg"
+                                        alt="Lorem Ipsum is simply">
+                                    <div class="m-4">
+                                        <span class="font-bold">Nazwa Obrazka</span>
+                                        <span class="block">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley of type and
+                                            scrambled it to make a type specimen book.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+
+    <footer>
+        <div
+            class="h-48 flex justify-center w-full bg-gradient-to-r from-indigo-800 via-red-800 to-orange-800  border-indigo-900 border-t-2 shadow-lg text-gray-400 items-center">
+            <p class="text-sm text-center">Urząd Marszałkowski Województwa Łódzkiego&#169;</p>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/*  ---------------------------- Button class ------------------------------------- */
+.btn{
+    @apply
+        rounded-full
+        uppercase
+        px-3
+        py-3
+        tracking-wider
+        font-bold
+        text-sm
+        cursor-pointer
+        transition
+        ease-out
+        duration-500
+        transform
+        border-indigo-600
+        border-2
+        bg-white
+        text-indigo-600
+        shadow-lg;
+        
+}
+
+.btn:hover{
+    @apply scale-150 shadow-inner;
+}
+
+/*  --------------------------------- Hover on images ------------------------------------- */
+
+.imgh{
+    @apply
+        transform
+}
+
+.imgh:hover{
+    @apply
+        scale-105;
+}
